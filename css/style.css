@@ -1,3 +1,12 @@
 *{
-    background-color: beige;
+    font-family: "Lato";
+    font-weight: 400; 
+}
+
+body{
+    background-color: #f9d8b2;
+}
+
+nav {
+    background-color: white;
 }
