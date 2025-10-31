@@ -11,6 +11,19 @@ nav {
     background-color: white;
 }
 
+.navbar-brand:hover {
+    opacity: 50%;
+}
+
+.nav-link {
+    color: #f28d16;
+}
+
 .nav-link:hover {
-   text-decoration: underline; 
+    color: #f28d16;
+    font-weight: 900; 
+}
+
+.nav-link.dropdown-toggle.show {
+    color: #f28d16;
 }
