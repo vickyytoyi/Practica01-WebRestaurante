@@ -17,13 +17,43 @@ nav {
 
 .nav-link {
     color: #f28d16;
+    transition: transform 0.3s;
 }
 
 .nav-link:hover {
     color: #f28d16;
-    font-weight: 900; 
+    font-weight: 900;
+    transform: scale(1.2); 
 }
 
 .nav-link.dropdown-toggle.show {
     color: #f28d16;
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #ffffff;
+}
+
+.dropdown-item {
+    color: #f28d16;
+}
+
+.dropdown-item:hover {
+    color: #f28d16;
+    font-weight: 900;
+}
+
+.dropdown-item:active {
+    background-color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  .nav-link:hover {
+    transform: none;
+  }
 }
