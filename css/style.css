@@ -1,6 +1,7 @@
 *{
     font-family: "Lato";
-    font-weight: 400; 
+    font-weight: 400;
+    box-sizing: border-box;
 }
 
 body{
@@ -26,7 +27,11 @@ nav {
     transform: scale(1.2); 
 }
 
-.nav-link.dropdown-toggle.show {
+.nav-link:focus {
+    color: #f28d16;
+}
+
+.navbar-nav .nav-link.show {
     color: #f28d16;
 }
 
@@ -52,7 +57,21 @@ nav {
     background-color: #ffffff;
 }
 
-@media (min-width: 600px) {
+.dropdown-toggle::after {
+    content: none;
+}
+
+.navbar-toggler {
+    color: #f28d16;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    background-color: #f9d8b2;
+    /* box-shadow: none; */
+}
+
+@media (max-width: 992px) {
   .nav-link:hover {
     transform: none;
   }
