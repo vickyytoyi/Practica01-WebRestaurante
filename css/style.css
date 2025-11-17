@@ -1,19 +1,39 @@
 *{
-    font-family: "Lato";
-    font-weight: 400;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Lato";
 }
 
 body{
-    background-color: #f9d8b2;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 400;
+    background-color: #ffffff;
 }
 
+main {
+    padding: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* HEADER */
 nav {
     background-color: white;
 }
 
 .navbar-brand:hover {
     opacity: 50%;
+}
+
+.nav-item {
+    font-size: 1.4vh;
 }
 
 .nav-link {
@@ -46,6 +66,7 @@ nav {
 
 .dropdown-item {
     color: #f28d16;
+    font-size: 1.2vh;
 }
 
 .dropdown-item:hover {
@@ -68,11 +89,51 @@ nav {
 
 .navbar-toggler:focus {
     background-color: #f9d8b2;
-    /* box-shadow: none; */
+}
+
+/* MENU */
+.grid-wrapper {
+    padding: 1rem 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-wrapper > div {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 }
 
 @media (max-width: 992px) {
-  .nav-link:hover {
-    transform: none;
-  }
+    .nav-link:hover {
+        transform: none;
+    }
 }
