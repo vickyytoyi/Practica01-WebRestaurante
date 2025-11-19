@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="es">
   <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title> Tienda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Tienda</title>
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styletienda.css">
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- Tipografía -->
@@ -54,67 +57,78 @@
      </nav>
    </header>
 
-   <section class="hero">
-     <div class="container">
-       <div class="row align-items-center">
-         <div class="col-lg-6 reveal">
-           <h1 class="headline brand-font mb-3">La tienda oficial de El Celler de Can Roca</h1>
-           <p class="lead text-muted">Postres, libros, delicatessen y objetos cuidadosamente seleccionados por los hermanos Roca. Packaging exclusivo para regalos.</p>
-           <div class="mt-4">
-             <a href="#productos" class="btn btn-accent me-2">Comprar ahora</a>
-             <a href="#coleccion" class="btn btn-outline-accent">Ver la colección</a>
-           </div>
-         </div>
-         <div class="col-lg-6 reveal">
-           <div id="heroCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
-             <div class="carousel-inner">
-               <div class="carousel-item active">
-                 <img src="assets/hero1.jpg" class="d-block w-100" alt="postres">
-               </div>
-               <div class="carousel-item">
-                 <img src="assets/hero2.jpg" class="d-block w-100" alt="libros">
-               </div>
-               <div class="carousel-item">
-                 <img src="assets/hero3.jpg" class="d-block w-100" alt="merch">
-               </div>
-             </div>
-             <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Anterior</span>
-             </button>
-             <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Siguiente</span>
-             </button>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
+   <section id="products" class="product-section">
+      <div class="container product-block">
 
-   <!-- SECCIÓN: Productos -->
-   <section id="productos" class="py-5">
-     <div class="container">
-       <div class="d-flex justify-content-between align-items-center mb-4 reveal">
-          <h2 class="h3 brand-font">Colección destacada</h2>
-          <div>
-            <select id="sortSelect" class="form-select form-select-sm">
-              <option value="default">Ordenar: Relevancia</option>
-              <option value="price-asc">Precio: menor a mayor</option>
-              <option value="price-desc">Precio: mayor a menor</option>
-              <option value="new">Novedades</option>
-            </select>
+        <!-- Bloque 1 -->
+        <div class="product-row">
+            <div class="product-img img-large reveal">
+                <img src="img/calendario-de-adviento-celestial-notes.webp" alt="Producto 1">
+            </div>
+
+            <div class="product-text reveal">
+                <h2 class="pd-title reveal" >Colección Destacada</h2>
+                <p class="pd-desc">
+                    Piezas seleccionadas cuidadosamente por los hermanos Roca.
+                    Un equilibrio entre arte, sabor y diseño contemporáneo.
+                </p>
+                <a href="#" class="pd-readmore">VER MÁS</a>
+            </div>
+        </div>
+
+        <!-- Bloque 2 con imágenes desalineadas -->
+        <div class="product-row offset-row">
+            <div class="product-img img-small reveal">
+                <img src="img/calendario-de-adviento-celestial-notes.webp" alt="">
+            </div>
+
+            <div class="product-img img-medium reveal">
+                <img src="img/calendario-de-adviento-celestial-notes.webp" alt="" >
+            </div>
+
+            <div class="product-text reveal">
+                <h3 class="pd-subtitle">Dulces, libros y objetos</h3>
+                <p class="pd-desc small">
+                    Una selección que rompe la estructura habitual de un catálogo.
+                    Ligero, inesperado, elegante.
+                </p>
+            </div>
+        </div>
+
+        <!-- Carrousel -->
+        <div class="product-carousel reveal">
+            <h3 class="pd-subtitle mb-4">Explorar Productos</h3>
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+
+                <!-- Item generado manualmente o vía JS -->
+                <div class="swiper-slide product-card-ed">
+                  <img src="img/calendario-de-adviento-celestial-notes.webp">
+                  <h4 class="p-title">Tarta de Surtidos</h4>
+                  <span class="p-price">€28</span>
+                </div>
+
+                <div class="swiper-slide product-card-ed">
+                  <img src="img/menu_ejemplo01.webp" >
+                  <h4 class="p-title">Libro Sabores</h4>
+                  <span class="p-price">€45</span>
+                </div>
+
+                <div class="swiper-slide product-card-ed">
+                  <img src="img/menu_ejemplo05.webp">
+                  <h4 class="p-title">Caja de Dulces</h4>
+                  <span class="p-price">€22.50</span>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
           </div>
        </div>
-
-        <div id="productsGrid" class="row g-4">
-        </div>
-        <!-- tarjetas generadas via JS -->
-        <div class="text-center mt-5 reveal">
-          <button id="loadMore" class="btn btn-outline-accent">Ver más productos</button>
-        </div> 
      </div>
     </section>
+
+   
 
     <!-- CARRITO -->
     <div class="offcanvas offcanvas-end" id="cartOffcanvas">
@@ -165,15 +179,21 @@
      </div>
    </footer>
 
-    <!-- Links JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <!-- Links JS -->
-    <script src="js/script.js"></script>
     <!-- CDN Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer">  
     </script>
-    <!-- Link fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Links GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- Links Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Links JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Links JS -->
+    <script src="js/scripstiends.js"></script>
 
   </body>    
       
