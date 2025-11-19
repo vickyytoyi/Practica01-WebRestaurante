@@ -13,6 +13,7 @@ body{
 }
 
 main {
+    margin-top: 2rem;
     padding: 30px;
 }
 
@@ -23,9 +24,26 @@ img {
     display: inline-block;
 }
 
-/* HEADER */
+.sec-h1{
+    color: #f28d16;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.sec-h2{
+    color: #f9d8b2;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+/* NAVBAR */
 nav {
     background-color: white;
+}
+
+.navbar-brand {
+    margin-right: 0;
 }
 
 .navbar-brand:hover {
@@ -123,6 +141,29 @@ nav {
 .grid-wrapper .big {
     grid-column: span 2;
     grid-row: span 2;
+}
+
+/* FAQs */
+.accordion-item{
+    border: none;
+}
+
+.accordion-button {
+    font-weight: 700;
+    padding: 0.8rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 768px) {
