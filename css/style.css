@@ -187,6 +187,21 @@ nav {
     border: none;
 }
 
+/* FOOTER */
+.btn-accent {
+    background: #ff6a00;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    padding: .55rem .9rem;
+}
+
+footer{
+    background:#fff;
+    border-top:1px solid #eee;
+    padding:3rem 0;
+}
+
 @media screen and (max-width: 768px) {
     .grid-wrapper > div {
         grid-column: span 2;
