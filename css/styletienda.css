@@ -38,6 +38,9 @@ body{
     transition:.7s;
 }
 
+.row {
+    margin-right: 0;
+}
 
 /* ===== Estilos tienda (minimal) ===== */
 .shop-section { background: #fbf7f5; color: #111; }
@@ -55,14 +58,15 @@ body{
 .featured-left {
     padding-top: 60px;
     height: 100%;
-    overflow: visible;
+    overflow: hidden;
 }
   
 .featured-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+    overflow: hidden;
+
     
 }
   
