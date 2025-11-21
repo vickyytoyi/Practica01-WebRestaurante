@@ -9,5 +9,10 @@ ScrollReveal().reveal(".grid-wrapper > div", {
     scale: 0.9,
 });
 
+// Calendario de la sección Reservas
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
 
  

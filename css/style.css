@@ -24,14 +24,19 @@ img {
     display: inline-block;
 }
 
+p {
+    margin-bottom: 0.5rem;
+}
+
 .sec-h1{
     color: #f28d16;
     font-size: 0.8rem;
     font-weight: 700;
+    margin-top: 1rem;
 }
 
 .sec-h2{
-    color: #f9d8b2;
+    color: #4D2F0F;
     font-size: 1.8rem;
     font-weight: 700;
     margin-top: 0.5rem;
@@ -39,7 +44,7 @@ img {
 
 /* NAVBAR */
 nav {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .navbar-brand {
@@ -51,7 +56,7 @@ nav {
 }
 
 .nav-item {
-    font-size: 1.4vh;
+    font-size: 0.9rem;
 }
 
 .nav-link {
@@ -73,30 +78,30 @@ nav {
     color: #f28d16;
 }
 
-.dropdown-menu {
+.navbar .dropdown-menu {
     background-color: #ffffff;
     border-color: #ffffff;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
     background-color: #ffffff;
 }
 
-.dropdown-item {
+.navbar .dropdown-item {
     color: #f28d16;
-    font-size: 1.2vh;
+    font-size: 0.7rem;
 }
 
-.dropdown-item:hover {
+.navbar .dropdown-item:hover {
     color: #f28d16;
     font-weight: 900;
 }
 
-.dropdown-item:active {
+.navbar .dropdown-item:active {
     background-color: #ffffff;
 }
 
-.dropdown-toggle::after {
+.navbar .dropdown-toggle::after {
     content: none;
 }
 
@@ -106,7 +111,7 @@ nav {
 }
 
 .navbar-toggler:focus {
-    background-color: #f9d8b2;
+    box-shadow: none;
 }
 
 /* MENU */
@@ -164,6 +169,49 @@ nav {
 
 .accordion-body {
     font-size: 0.9rem;
+}
+
+/* Datepicker */
+.ui-datepicker {
+    max-width: 15rem;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-widget-header {
+    border: none;
+    background: #ffffff;
+    color: #f28d16;
+    font-weight: bold;
+}
+
+.ui-state:hover {
+    border: none;
+}
+
+/* CONTACTO */
+
+h3 {
+    color: #f28d16;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+.btn-accent {
+    background: #ff6a00;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    padding: .55rem .9rem;
+}
+
+footer{
+    background:#fff;
+    border-top:1px solid #eee;
+    padding:3rem 0;
 }
 
 @media screen and (max-width: 768px) {
