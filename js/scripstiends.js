@@ -3,62 +3,6 @@ console.log("Hello world!");
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  /* ===== Lenis: smooth scroll ===== */
-  let lenis;
-  if (typeof Lenis !== 'undefined') {
-    lenis = new Lenis({ duration: 0.6, easing: t => t });
-
-    // ScrollTrigger con Lenis
-    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-      ScrollTrigger.scrollerProxy(document.body, {
-        scrollTop(value) {
-          return arguments.length ? lenis.scrollTo(value) : lenis.scroll;
-        },
-        getBoundingClientRect() {
-          return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-        },
-        pinType: document.body.style.transform ? "transform" : "fixed"
-      });
-    }
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    // Actualizar ScrollTrigger solo cuando hay scroll
-    if (typeof ScrollTrigger !== 'undefined') {
-      lenis.on('scroll', () => ScrollTrigger.update());
-    }
-  }
-
-  /* ===== GSAP + ScrollTrigger: reveal animations ===== */
-  if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const revealEls = document.querySelectorAll('.reveal');
-    if (revealEls.length) {
-      revealEls.forEach(el => {
-        gsap.fromTo(el, { y: 30, opacity: 0 }, {
-          y: 0, opacity: 1, duration: 0.9, ease: 'power3.out',
-          scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
-        });
-      });
-    }
-
-    const parallaxEls = document.querySelectorAll('.hero-parallax, .collection-parallax, .slide-img, .card-img-zoom');
-    if (parallaxEls.length) {
-      parallaxEls.forEach(img => {
-        gsap.to(img, {
-          y: -20,
-          ease: 'none',
-          scrollTrigger: { trigger: img, start: 'top bottom', end: 'bottom top', scrub: true }
-        });
-        img.style.willChange = "transform"; // mejora rendimiento
-      });
-    }
-  }
 
   /* ===== Swiper: inicialización para múltiples carousels ===== */
   if (typeof Swiper !== 'undefined') {
