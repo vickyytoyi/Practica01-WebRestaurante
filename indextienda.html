@@ -34,7 +34,6 @@
               <li class="nav-item me-3"><a class="nav-link" href="#casacacao">CASA CACAO</a></li>
               <li class="nav-item me-3"><a class="nav-link" href="#erdestileria">ER DESTILERÍA</a></li>
               <li class="nav-item me-3"><a class="nav-link" href="#rocarecicla">ROCA RECICLA</a></li>
-              <li class="nav-item me-3"><a class="nav-link" href="#libros">LIBROS</a></li>
            </ul>
           
            <form class="d-flex ms-lg-4 me-3" onsubmit="return false;">
@@ -57,76 +56,240 @@
      </nav>
    </header>
 
-   <section id="products" class="product-section">
-      <div class="container product-block">
-
-        <!-- Bloque 1 -->
-        <div class="product-row">
-            <div class="product-img img-large reveal">
-                <img src="img/calendario-de-adviento-celestial-notes.webp" alt="Producto 1">
-            </div>
-
-            <div class="product-text reveal">
-                <h2 class="pd-title reveal" >Colección Destacada</h2>
-                <p class="pd-desc">
-                    Piezas seleccionadas cuidadosamente por los hermanos Roca.
-                    Un equilibrio entre arte, sabor y diseño contemporáneo.
-                </p>
-                <a href="#" class="pd-readmore">VER MÁS</a>
-            </div>
-        </div>
-
-        <!-- Bloque 2 con imágenes desalineadas -->
-        <div class="product-row offset-row">
-            <div class="product-img img-small reveal">
-                <img src="img/calendario-de-adviento-celestial-notes.webp" alt="">
-            </div>
-
-            <div class="product-img img-medium reveal">
-                <img src="img/calendario-de-adviento-celestial-notes.webp" alt="" >
-            </div>
-
-            <div class="product-text reveal">
-                <h3 class="pd-subtitle">Dulces, libros y objetos</h3>
-                <p class="pd-desc small">
-                    Una selección que rompe la estructura habitual de un catálogo.
-                    Ligero, inesperado, elegante.
-                </p>
-            </div>
-        </div>
-
-        <!-- Carrousel -->
-        <div class="product-carousel reveal">
-            <h3 class="pd-subtitle mb-4">Explorar Productos</h3>
-
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-
-                <!-- Item generado manualmente o vía JS -->
-                <div class="swiper-slide product-card-ed">
-                  <img src="img/calendario-de-adviento-celestial-notes.webp">
-                  <h4 class="p-title">Tarta de Surtidos</h4>
-                  <span class="p-price">€28</span>
-                </div>
-
-                <div class="swiper-slide product-card-ed">
-                  <img src="img/menu_ejemplo01.webp" >
-                  <h4 class="p-title">Libro Sabores</h4>
-                  <span class="p-price">€45</span>
-                </div>
-
-                <div class="swiper-slide product-card-ed">
-                  <img src="img/menu_ejemplo05.webp">
-                  <h4 class="p-title">Caja de Dulces</h4>
-                  <span class="p-price">€22.50</span>
-                </div>
-
+   <!-- ======= TIENDA: Sección principal ======= -->
+   <section class="featured-collection">
+      <div class="featured-grid">
+      
+        <!-- Lado Izquierdo: Slider -->
+       <div class="featured-left">
+          <div class="featured-slider swiper myFeaturedSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/calendario-adviento-rocambolesc.webp" alt="Colección destacada 1" />
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-slide">
+                <img src="img/advent-calendario-adviento-celler-can-roca-5-scaled.webp" alt="Colección destacada 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/foto-apertura-hule-y-mantel-laia-2023-12-05t165046-837.webp" alt="Colección destacada 3" />
+              </div>
+           </div>
+            <div class="swiper-pagination"></div>
+         </div>
+        </div>
+        
+        <div class="featured-right">
+          <h1 class="display-5 mb-3 brand-font">Colección Destacada</h1>
+          <p class="lead text-muted">
+            Piezas seleccionadas para esta navidad por los hermanos Roca: equilibrio entre arte, sabor y diseño. Disfruta del sabor y la dulzura de estos productos en estas fiestas.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-outline-accent me-3">Ver colección</a>
+            <a href="#" class="btn btn-accent">Comprar ahora</a>
           </div>
-       </div>
-     </div>
+        </div>
+      </div>
+        
     </section>
+
+    <br>
+    <br>
+
+    <!-- GRID DE MINI-CARDS (nueva selección: cuatro items) -->
+    <div class="row g-4 mb-5 mini-grid reveal">
+      <h2 class="title-section">Rocambolesc</h2>
+      <div class="col-6 col-md-3">
+        <div class="card product-card h-100 text-center">
+          <div class="card-img-top overflow-hidden">
+            <img src="img/vainilla.webp" class="img-fluid card-img-zoom" alt="Dulces">
+          </div>
+          <div class="card-body">
+            <h6 class="mb-1">Helado de vainilla</h6>
+            <small class="text-muted d-block mb-2">15,50 €</small>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="dulces-1" data-name="Caja Dulces" data-price="22.50">Añadir</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card product-card h-100 text-center">
+          <div class="card-img-top overflow-hidden">
+            <img src="img/sorbete-de-fresa-.webp" class="img-fluid card-img-zoom" alt="Postres">
+          </div>
+          <div class="card-body">
+            <h6 class="mb-1">Helado de fresa</h6>
+            <small class="text-muted d-block mb-2">15,50 €</small>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="postres-1" data-name="Surtido Postres" data-price="28.00">Añadir</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card product-card h-100 text-center">
+          <div class="card-img-top overflow-hidden">
+            <img src="img/bombon-helado-oscuro.webp" class="img-fluid card-img-zoom" alt="Libros">
+          </div>
+          <div class="card-body">
+            <h6 class="mb-1">Bombón Rocatocha</h6>
+            <small class="text-muted d-block mb-2"> 8,50 €</small>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="libros-1" data-name="Libro Sabores" data-price="45.00">Añadir</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card product-card h-100 text-center">
+          <div class="card-img-top overflow-hidden">
+            <img src="img/helado-lactico.webp" class="img-fluid card-img-zoom" alt="Objetos">
+          </div>
+          <div class="card-body">
+            <h6 class="mb-1">Helado láctico</h6>
+            <small class="text-muted d-block mb-2">15,50 €</small>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="objetos-1" data-name="Utensilio" data-price="35.00">Añadir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAROUSEL2: Explorar Productos -->
+    <div class="collection-block reveal mb-5">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <h3 class="text-title">Casa Cacao</h3>
+        <small class="text-muted">Selecciona y añade al carrito</small>
+      </div>
+
+      <div class="swiper collection-swiper" style="padding-bottom:60px;">
+        <div class="swiper-wrapper">
+          <!-- Slides: repetir / generar con server o JS si quieres -->
+          <div class="swiper-slide product-card-ed">
+            <div class="card h-100 border-0">
+              <div class="card-img-top overflow-hidden"><img src="img/panettone-cacao-1kg-el-celler-de-can-roca.webp" class="img-fluid slide-img" alt=""></div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="p-title mb-1">Tarta de Surtidos</h5>
+                <p class="p-price mb-3">€28</p>
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="tarta-1" data-name="Tarta de Surtidos" data-price="28.00">Añadir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card-ed">
+            <div class="card h-100 border-0">
+              <div class="card-img-top overflow-hidden"><img src="img/crema-de-pistacho.webp" class="img-fluid slide-img" alt=""></div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="p-title mb-1">Libro Sabores</h5>
+                <p class="p-price mb-3">€45</p>
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="libro-2" data-name="Libro Sabores" data-price="45.00">Añadir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card-ed">
+            <div class="card h-100 border-0">
+              <div class="card-img-top overflow-hidden"><img src="img/turron-de-nibs-y-nuez-pecana.webp" class="img-fluid slide-img" alt=""></div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="p-title mb-1">Caja de Dulces</h5>
+                <p class="p-price mb-3">€22.50</p>
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card-ed">
+            <div class="card h-100 border-0">
+              <div class="card-img-top overflow-hidden"><img src="img/rocacao.webp" class="img-fluid slide-img" alt=""></div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="p-title mb-1">Caja de Dulces</h5>
+                <p class="p-price mb-3">€22.50</p>
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card-ed">
+            <div class="card h-100 border-0">
+              <div class="card-img-top overflow-hidden"><img src="img/con-cafe-de-etiopia.webp" class="img-fluid slide-img" alt=""></div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="p-title mb-1">Caja de Dulces</h5>
+                <p class="p-price mb-3">€22.50</p>
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card-ed">
+            <div class="card h-100 border-0">
+              <div class="card-img-top overflow-hidden"><img src="img/rocas-de-chocolate-blanco-pistacho-y-arandano.webp" class="img-fluid slide-img" alt=""></div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="p-title mb-1">Caja de Dulces</h5>
+                <p class="p-price mb-3">€22.50</p>
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-card-ed">
+            <div class="card h-100 border-0">
+              <div class="card-img-top overflow-hidden"><img src="img/panettone-tradicional-1kg-el-celler-de-can-roca.webp" class="img-fluid slide-img" alt=""></div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="p-title mb-1">Caja de Dulces</h5>
+                <p class="p-price mb-3">€22.50</p>
+                <div class="mt-auto d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Minimal pagination + controles -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- SECCIONES POR COLECCIÓN  -->
+    <div class="collection-alt mb-5 reveal">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <div class="overflow-hidden rounded collection-img">
+            <img src="img/89_thumb.webp" alt="Mugs" class="img-fluid collection-parallax">
+          </div>
+        </div>
+        <div class="col-md-6 collection-text">
+          <h2 class="brand-font">Er destilería</h2>
+          <p class="text-muted">Explora la innovación en destilados únicos creados por los hermanos Roca, ofreciendo sabores auténticos y experiencias sensoriales que convierten cada sorbo en un momento especial.</p>
+          <a href="#" class="btn btn-outline-accent">Ver todo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-alt mb-5 reveal">
+      <div class="row align-items-center g-4 flex-md-row-reverse">
+        <div class="col-md-6">
+          <div class="overflow-hidden rounded collection-img">
+            <img src="img/Rocarecicla.webp" alt="Vases" class="img-fluid collection-parallax">
+          </div>
+        </div>
+        <div class="col-md-6 collection-text2">
+          <h2 class="brand-font">Roca recicla</h2>
+          <p class="text-muted">Una iniciativa que transforma materiales en nuevas oportunidades, dando una segunda vida a envases y objetos para convertirlos en piezas únicas. Con creatividad y compromiso ambiental, esta colección refleja cómo el diseño y la gastronomía pueden unirse para fomentar un consumo responsable y consciente.</p>
+          <a href="#" class="btn btn-outline-accent">Ver todo</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ======= FIN SECCION TIENDA ======= -->
 
    
 
