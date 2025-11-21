@@ -7,6 +7,7 @@
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css">
+    <!-- Link CSS -->
     <link rel="stylesheet" href="css/styletienda.css">
     <!-- Link fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -96,7 +97,7 @@
     <br>
 
     <!-- GRID DE MINI-CARDS (nueva selección: cuatro items) -->
-    <div class="row g-4 mb-5 mini-grid reveal" id="rocambolesc">
+    <div class="row g-4 mb-5 mini-grid" id="rocambolesc">
       <h2 class="title-section">Rocambolesc</h2>
       <div class="col-6 col-md-3">
         <div class="card product-card h-100 text-center">
@@ -106,7 +107,7 @@
           <div class="card-body">
             <h6 class="mb-1">Helado de vainilla</h6>
             <small class="text-muted d-block mb-2">15,50 €</small>
-            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="dulces-1" data-name="Caja Dulces" data-price="22.50">Añadir</button>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="dulces-1" data-name="Helado de vainilla" data-price="22.50">Añadir</button>
           </div>
         </div>
       </div>
@@ -118,7 +119,7 @@
           <div class="card-body">
             <h6 class="mb-1">Helado de fresa</h6>
             <small class="text-muted d-block mb-2">15,50 €</small>
-            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="postres-1" data-name="Surtido Postres" data-price="28.00">Añadir</button>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="postres-1" data-name="Helado de fresa" data-price="28.00">Añadir</button>
           </div>
         </div>
       </div>
@@ -130,7 +131,7 @@
           <div class="card-body">
             <h6 class="mb-1">Bombón Rocatocha</h6>
             <small class="text-muted d-block mb-2"> 8,50 €</small>
-            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="libros-1" data-name="Libro Sabores" data-price="45.00">Añadir</button>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="libros-1" data-name="Bombón Rocatocha" data-price="45.00">Añadir</button>
           </div>
         </div>
       </div>
@@ -142,14 +143,14 @@
           <div class="card-body">
             <h6 class="mb-1">Helado láctico</h6>
             <small class="text-muted d-block mb-2">15,50 €</small>
-            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="objetos-1" data-name="Utensilio" data-price="35.00">Añadir</button>
+            <button class="btn btn-sm btn-outline-accent add-to-cart" data-id="objetos-1" data-name="Helado láctico" data-price="35.00">Añadir</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- CAROUSEL2: Explorar Productos -->
-    <div class="collection-block reveal mb-5" id="casacacao">
+    <div class="collection-block mb-5" id="casacacao">
       <div class="d-flex justify-content-between align-items-end mb-3">
         <h3 class="text-title">Casa Cacao</h3>
         <small class="text-muted">Selecciona y añade al carrito</small>
@@ -165,7 +166,7 @@
                 <h5 class="p-title mb-1">Panettone de cacao</h5>
                 <p class="p-price mb-3">€28</p>
                 <div class="mt-auto d-flex gap-2">
-                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="tarta-1" data-name="Tarta de Surtidos" data-price="28.00">Añadir</button>
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="tarta-1" data-name="Panettone de cacao" data-price="28.00">Añadir</button>
                 </div>
               </div>
             </div>
@@ -178,7 +179,7 @@
                 <h5 class="p-title mb-1">Crema de pistacho</h5>
                 <p class="p-price mb-3">€45</p>
                 <div class="mt-auto d-flex gap-2">
-                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="libro-2" data-name="Libro Sabores" data-price="45.00">Añadir</button>
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="libro-2" data-name="Crema de pistacho" data-price="45.00">Añadir</button>
                 </div>
               </div>
             </div>
@@ -191,7 +192,7 @@
                 <h5 class="p-title mb-1">Turrón de nueces</h5>
                 <p class="p-price mb-3">€22.50</p>
                 <div class="mt-auto d-flex gap-2">
-                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Turrón de nueces" data-price="22.50">Añadir</button>
                 </div>
               </div>
             </div>
@@ -204,7 +205,7 @@
                 <h5 class="p-title mb-1">Rocacao</h5>
                 <p class="p-price mb-3">€22.50</p>
                 <div class="mt-auto d-flex gap-2">
-                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Rocacao" data-price="22.50">Añadir</button>
                 </div>
               </div>
             </div>
@@ -217,7 +218,7 @@
                 <h5 class="p-title mb-1">Café de Etiopía</h5>
                 <p class="p-price mb-3">€22.50</p>
                 <div class="mt-auto d-flex gap-2">
-                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Café de Etiopía" data-price="22.50">Añadir</button>
                 </div>
               </div>
             </div>
@@ -230,7 +231,7 @@
                 <h5 class="p-title mb-1">Panettone de chocolate blanco, pistacho y arándano</h5>
                 <p class="p-price mb-3">€22.50</p>
                 <div class="mt-auto d-flex gap-2">
-                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Panettone de chocolate blanco" data-price="22.50">Añadir</button>
                 </div>
               </div>
             </div>
@@ -243,7 +244,7 @@
                 <h5 class="p-title mb-1">Panettone tradicional</h5>
                 <p class="p-price mb-3">€22.50</p>
                 <div class="mt-auto d-flex gap-2">
-                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Caja de Dulces" data-price="22.50">Añadir</button>
+                  <button class="btn btn-sm btn-outline-accent add-to-cart w-100" data-id="dulces-2" data-name="Panettone tradicional" data-price="22.50">Añadir</button>
                 </div>
               </div>
             </div>
@@ -257,7 +258,7 @@
     </div>
 
     <!-- SECCIONES POR COLECCIÓN  -->
-    <div class="collection-alt mb-5 reveal" id=erdestileria>
+    <div class="collection-alt mb-5" id=erdestileria>
       <div class="row align-items-center g-4">
         <div class="col-md-6">
           <div class="overflow-hidden rounded collection-img">
@@ -272,7 +273,7 @@
       </div>
     </div>
 
-    <div class="collection-alt mb-5 reveal" id="rocarecicla">
+    <div class="collection-alt mb-5" id="rocarecicla">
       <div class="row align-items-center g-4 flex-md-row-reverse">
         <div class="col-md-6">
           <div class="overflow-hidden rounded collection-img">
@@ -326,7 +327,7 @@
          <h6>Ayuda</h6>
          <ul class="list-unstyled">
            <li><a href="#">Envíos y devoluciones</a></li>
-           <li><a href="#">Preguntas frecuentes</a></li>
+           <li><a href="index.html">Preguntas frecuentes</a></li>
            <li><a href="#">Contacto</a></li>
          </ul>
        </div>

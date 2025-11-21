@@ -14,5 +14,16 @@ $( function() {
     $( "#datepicker" ).datepicker();
   } );
 
+  var typed6 = new Typed("#typed-text", {
+    strings: [
+        "¿Tienes alguna duda?",
+        "Revisa nuestra sección FAQs o...",
+        "Entra en contacto con nosotros!",
+    ],
+    typeSpeed: 80,
+    backSpeed: 40,
+    loop: true,
+});
+
 
  

@@ -2,17 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: "Lato";
 }
 
 body{
-    max-width: 1200px;
-    margin: 0 auto;
     font-weight: 400;
     background-color: #ffffff;
 }
 
-main {
+section {
     margin-top: 2rem;
     padding: 30px;
 }
@@ -114,6 +113,20 @@ nav {
     box-shadow: none;
 }
 
+/* CABECERA */
+#cabecera {
+    margin-top: 4rem;
+    background-color: #f28d16;
+}
+
+#cabecera > div > div > h1 {
+    color: #ffffff;
+}
+
+#cabecera > div > div > p {
+    color: #ffffff;
+}
+
 /* MENU */
 .grid-wrapper {
     padding: 1rem 0;
@@ -171,9 +184,16 @@ nav {
     font-size: 0.9rem;
 }
 
+/* RESERVAR */
+
+#reservar{
+    background-color: #fbf7f5;
+}
+
 /* Datepicker */
 .ui-datepicker {
     max-width: 15rem;
+    background: #fbf7f5;
 }
 
 .ui-widget.ui-widget-content {
@@ -182,7 +202,7 @@ nav {
 
 .ui-widget-header {
     border: none;
-    background: #ffffff;
+    background: #fbf7f5;
     color: #f28d16;
     font-weight: bold;
 }
@@ -191,7 +211,16 @@ nav {
     border: none;
 }
 
+/* Para controlar que el texto typed no mueva la galeria */
+.text-cont {
+    display: block;
+    height: 50px;
+}
+
 /* CONTACTO */
+#contacto {
+    background-color: #fbf7f5;
+}
 
 h3 {
     color: #f28d16;
