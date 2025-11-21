@@ -61,6 +61,129 @@ body{
     color: #eee;
 }
 
+/* Paleta y utilidades */
+:root {
+    --bg-dark: #0f0f10;
+    --bg-light: #f7f7f8;
+    --accent: #cd6017;
+    --accent-2:#cd6017;
+    --soft-shadow: 0 10px 30px rgba(0,0,0,.15);
+  }
+  
+  .section-padding {
+    padding: 80px 0;
+  }
+  
+  /* Hero */
+  #restaurante-hero {
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    background: #0b0b0c;
+  }
+  #restaurante-hero .hero-bg {
+    position: absolute;
+    inset: 0;
+  }
+  #restaurante-hero .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,.25), rgba(0,0,0,.65));
+  }
+  #restaurante-hero .hero-shimmer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 45%, rgba(255,255,255,.07) 50%, transparent 55%);
+    mix-blend-mode: overlay;
+    animation: shimmer 6s infinite linear;
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .text-shadow { text-shadow: 0 4px 18px rgba(0,0,0,.5); }
+  /* Imagenes */
+  .object-fit-cover { object-fit: cover; }
+  .image-card { position: relative; overflow: hidden; border-radius: 1rem; box-shadow: var(--soft-shadow); }
+  .image-card img { display: block; width: 100%; height: 100%; transition: transform .8s cubic-bezier(.19,1,.22,1), filter .8s; }
+  .image-card:hover img { transform: scale(1.06); filter: saturate(1.06) contrast(1.02); }
+  
+  /* Tilt hover */
+  .tilt { perspective: 800px; }
+  .tilt img, .tilt { transform-style: preserve-3d; transition: transform .6s cubic-bezier(.19,1,.22,1); }
+  .tilt:hover { transform: rotateX(4deg) rotateY(-6deg) scale(1.02); }
+  
+  /* Soft glow */
+  .soft-glow { box-shadow: 0 10px 30px rgba(0,0,0,.12), inset 0 0 0 rgba(255,255,255,0.0); transition: box-shadow .4s ease, transform .4s ease; }
+  .soft-glow:hover { box-shadow: 0 12px 40px rgba(0,0,0,.18), 0 0 0 4px rgba(255,255,255,.04); transform: translateY(-2px); }
+  
+  /* Reveal animations */
+  .reveal { opacity: 0; transform: translateY(20px); }
+  .reveal.in { opacity: 1; transform: none; transition: transform .9s cubic-bezier(.19,1,.22,1), opacity .9s ease; }
+  
+  [data-animate="fade-up"].in { animation: fadeUp .9s both; }
+  @keyframes fadeUp { from { opacity:0; transform: translateY(24px); } to { opacity:1; transform: translateY(0); } }
+  [data-animate="fade-in"].in { animation: fadeIn .9s both; }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  [data-animate="slide-right"].in { animation: slideRight .9s both; }
+  @keyframes slideRight { from { opacity:0; transform: translateX(-24px); } to { opacity:1; transform: translateX(0); } }
+  [data-animate="scale-in"].in { animation: scaleIn .9s both; }
+  @keyframes scaleIn { from { opacity:0; transform: scale(.94); } to { opacity:1; transform: scale(1); } }
+  
+  /* Parallax suave */
+  .parallax { will-change: transform; }
+  .parallax img { will-change: transform; }
+  
+  /* Blur beam decorativo */
+  .blur-beam::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(1200px 120px at 20% 10%, rgba(42,157,143,.12), transparent 60%),
+                radial-gradient(600px 100px at 80% 90%, rgba(230,57,70,.10), transparent 60%);
+    filter: blur(8px);
+    pointer-events: none;
+  }
+  
+  /* Marquee */
+  .marquee {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--soft-shadow);
+  }
+  .marquee-track {
+    display: flex;
+    gap: 48px;
+    padding: 16px 24px;
+    animation: marquee 18s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee-track span { font-weight: 600; color: #333; letter-spacing: .04em; }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  /* CTA decoraciones */
+  #cta-reserva .grain {
+    position: absolute; inset: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.03"/></svg>');
+    opacity: .25; pointer-events: none;
+  }
+  
+  /* Helpers */
+  .badge { letter-spacing: .05em; }
+  .progress { height: 8px; border-radius: 999px; background: #eee; }
+  .progress-bar { border-radius: 999px; }
+  
+  /* Responsivo */
+  @media (max-width: 992px) {
+    .display-6 { font-size: 1.9rem; }
+    #restaurante-hero { min-height: 60vh; }
+  }
+  
+
 
   
 footer{

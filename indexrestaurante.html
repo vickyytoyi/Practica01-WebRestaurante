@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Tienda</title>
+    <title>El Restaurante</title>
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css">
@@ -38,13 +38,341 @@
              <form class="d-flex ms-lg-4 me-3" onsubmit="return false;">
                 <div class="input-group shadow-sm">
                   <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
-                  <input id="searchInput" class="form-control search-input border-start-0" type="search" placeholder="Buscar productos..." aria-label="search">
+                  <input id="searchInput" class="form-control search-input border-start-0" type="search" placeholder="Buscar..." aria-label="search">
                 </div>
               </form>
             </div>
          </div>
        </nav>
      </header>
+
+
+        <!-- Hero restaurante -->
+        <section id="restaurante-hero" class="position-relative overflow-hidden">
+          <div class="hero-bg parallax" data-parallax-speed="0.35">
+            <!-- Reemplaza por tu imagen -->
+            <img src="img/hermanos.webp" alt="Restaurante El Caller de San Roca" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="hero-overlay"></div>
+          <div class="container position-relative z-1 py-5">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-10">
+                <h1 class="display-3 fw-bold text-white reveal" data-animate="fade-up">El Restaurante</h1>
+                <p class="lead text-white-50 mt-3 reveal" data-animate="fade-up" data-animate-delay="120">
+                  Una experiencia gastronómica que celebra el producto, el origen y la hospitalidad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-shimmer"></div>
+        </section>
+      
+        <!-- La sala -->
+        <section id="lasala" class="section-padding bg-body">
+          <div class="container">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-5">
+                <span class="badge bg-dark-subtle text-dark-emphasis rounded-pill reveal" data-animate="fade-in">La sala</span>
+                <h2 class="display-6 mt-3 fw-semibold reveal" data-animate="fade-up">Donde la hospitalidad toma el centro</h2>
+                <p class="text-secondary mt-3 reveal" data-animate="fade-up" data-animate-delay="120">
+                    Un claustro triangular que recibe la luz natural de un bosque interior que estructura el espacio. Sobre cada mesa, tres piedras simbolizan de nuevo el triángulo. Privacidad sin opacidad. Juego de luces y reflejos. Luces y sombras. Que comience el baile de los sentidos. Bienvenidos.
+                <div class="d-flex align-items-center gap-3 mt-4 reveal" data-animate="slide-right">
+                  <img src="img/0001s_0016_Daniel-Llambí-Waiter.webp" class="rounded-circle shadow-sm" width="60" height="60" alt="Jefe de sala">
+                  <blockquote class="mb-0 small text-muted fst-italic">
+                    “Servimos momentos, no solo platos.”
+                  </blockquote>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <!-- Carousel ambiente sala -->
+                <div id="carouselSala" class="carousel slide rounded-4 shadow-lg overflow-hidden reveal" data-bs-ride="carousel" data-animate="fade-in">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselSala" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                    <button type="button" data-bs-target="#carouselSala" data-bs-slide-to="1" aria-label="Foto 2"></button>
+                    <button type="button" data-bs-target="#carouselSala" data-bs-slide-to="2" aria-label="Foto 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="tilt">
+                        <img src="img/restaurante.webp" class="d-block w-100" alt="Ambiente cálido 1">
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-shadow">Texturas y luz</h5>
+                        <p class="small">Un espacio que abraza.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="tilt">
+                        <img src="img/sala-ppal.webp" class="d-block w-100" alt="Ambiente cálido 2">
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-shadow">Ritmo y servicio</h5>
+                        <p class="small">Atención en cada gesto.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="tilt">
+                        <img src="img/restaurant-img1.webp" class="d-block w-100" alt="Ambiente cálido 3">
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-shadow">Conversación y calma</h5>
+                        <p class="small">El tiempo se saborea.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselSala" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselSala" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Destacados de sala -->
+            <div class="row g-4 mt-5">
+              <div class="col-md-4">
+                <div class="card border-0 h-100 soft-glow reveal" data-animate="fade-up">
+                  <div class="card-body">
+                    <h5 class="fw-semibold">Iluminación envolvente</h5>
+                    <p class="text-secondary">Capas de luz que resaltan el ambiente y acompañan cada plato.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 h-100 soft-glow reveal" data-animate="fade-up" data-animate-delay="120">
+                  <div class="card-body">
+                    <h5 class="fw-semibold">Ritmo de servicio</h5>
+                    <p class="text-secondary">Sin prisa, sin pausa: cada paso con sentido y atención.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 h-100 soft-glow reveal" data-animate="fade-up" data-animate-delay="220">
+                  <div class="card-body">
+                    <h5 class="fw-semibold">Comodidad</h5>
+                    <p class="text-secondary">Materiales, acústica y disposición pensados para conversar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- La cocina -->
+        <section id="lacocina" class="section-padding position-relative">
+          <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-lg-6 order-lg-2">
+                <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill reveal" data-animate="fade-in">La cocina</span>
+                <h2 class="display-6 mt-3 fw-semibold reveal" data-animate="fade-up">Una cocina de estilo libre</h2>
+                <p class="text-secondary mt-3 reveal" data-animate="fade-up" data-animate-delay="120">
+                    Una cocina que abraza la emoción y la sensorialidad, desde un profundo sentido de la armonía y la hospitalidad heredado de las generaciones pasadas, tradición en balance perfecto con la creatividad, la innovación y la técnica.
+                </p>
+                <ul class="list-unstyled mt-4">
+                  <li class="d-flex gap-3 align-items-start reveal" data-animate="slide-right">
+                    <span class="badge rounded-circle bg-primary-subtle text-primary-emphasis p-3">1</span>
+                    <div>
+                      <strong>Temporada:</strong>
+                      <p class="mb-0 text-secondary">Menú vivo, según el calendario del campo y la mar.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex gap-3 align-items-start mt-3 reveal" data-animate="slide-right" data-animate-delay="120">
+                    <span class="badge rounded-circle bg-primary-subtle text-primary-emphasis p-3">2</span>
+                    <div>
+                      <strong>Técnica:</strong>
+                      <p class="mb-0 text-secondary">Una cocina conectada a la tierra como despensa y hábitat, que dialoga con los pequeños productores que han crecido con nosotros. Que atisba un mundo que quiere ser humano, genuino y sensible.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex gap-3 align-items-start mt-3 reveal" data-animate="slide-right" data-animate-delay="220">
+                    <span class="badge rounded-circle bg-primary-subtle text-primary-emphasis p-3">3</span>
+                    <div>
+                      <strong>Cercanía:</strong>
+                      <p class="mb-0 text-secondary">Despertar los sentidos, la memoria, la emoción. La armonía es destreza, la maestría humilde de hacer sencillas las complejas e infinitas conexiones contenidas en un plato, construir un discurso efímero en lo tangible para despertar a través del sabor lo esencialmente humano que perdura en el recuerdo. </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-lg-1">
+                <!-- Grid de cocina con hover y parallax leve -->
+                <div class="row g-3">
+                  <div class="col-6 reveal" data-animate="scale-in">
+                    <div class="image-card parallax" data-parallax-speed="0.12">
+                      <img src="img/menu10.webp" alt="Pase de platos" class="rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                  </div>
+                  <div class="col-6 reveal" data-animate="scale-in" data-animate-delay="120">
+                    <div class="image-card tilt">
+                      <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1600&auto=format&fit=crop" alt="Detalle de cocina" class="rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                  </div>
+                  <div class="col-12 reveal" data-animate="fade-up" data-animate-delay="220">
+                    <div class="image-card">
+                      <img src="img/cuina-principal.webp" alt="Plato emplatado" class="rounded-4 w-100 h-100 object-fit-cover">
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 text-end small text-muted reveal" data-animate="fade-in">
+                  Elaboraciones cambian según disponibilidad. Pregunta por el menú del día.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fondo decorativo -->
+          <div class="blur-beam"></div>
+        </section>
+      
+        <!-- La bodega -->
+        <section id="labodega" class="section-padding bg-body-tertiary">
+          <div class="container">
+            <div class="row align-items-end g-4">
+              <div class="col-lg-7">
+                <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill reveal" data-animate="fade-in">La bodega</span>
+                <h2 class="display-6 mt-3 fw-semibold reveal" data-animate="fade-up">El Vino es vida</h2>
+                <p class="text-secondary mt-3 reveal" data-animate="fade-up" data-animate-delay="120">
+                    Puede parecer una afirmación poética, y lo es, pero al mismo tiempo está cargada de discurso empírico, si consideramos el conjunto de reacciones físicas y químicas que conforman el vino. Ciencia y mística. Cuerpo y alma…
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <!-- Barras de estilo (no numéricas) -->
+                <div class="reveal" data-animate="fade-in">
+                  <div class="progress-label d-flex justify-content-between mb-1">
+                    <span class="fw-semibold">DO Rioja</span><span class="text-muted small">Clásicos y contemporáneos</span>
+                  </div>
+                  <div class="progress soft-glow" role="progressbar" aria-label="Rioja">
+                    <div class="progress-bar bg-danger" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="mt-3 reveal" data-animate="fade-in" data-animate-delay="120">
+                  <div class="progress-label d-flex justify-content-between mb-1">
+                    <span class="fw-semibold">DO Ribera del Duero</span><span class="text-muted small">Estructura y fruta</span>
+                  </div>
+                  <div class="progress soft-glow" role="progressbar" aria-label="Ribera">
+                    <div class="progress-bar bg-danger" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="mt-3 reveal" data-animate="fade-in" data-animate-delay="220">
+                  <div class="progress-label d-flex justify-content-between mb-1">
+                    <span class="fw-semibold">Blancos atlánticos</span><span class="text-muted small">Frescura y salinidad</span>
+                  </div>
+                  <div class="progress soft-glow" role="progressbar" aria-label="Blancos">
+                    <div class="progress-bar bg-info" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Carrusel de etiquetas y botellas -->
+            <div id="carouselBodega" class="carousel slide mt-5 reveal" data-animate="fade-up" data-bs-ride="carousel">
+              <div class="carousel-inner rounded-4 overflow-hidden shadow-lg">
+                <div class="carousel-item active">
+                  <div class="row g-4 align-items-stretch">
+                    <div class="col-md-4">
+                      <div class="card h-100 border-0 soft-glow tilt">
+                        <img src="img/1.svg" class="card-img-top" alt="Etiqueta vino 1">
+                        <div class="card-body">
+                          <h5 class="card-title">Tinto de parcela</h5>
+                          <p class="card-text text-secondary">Fruta roja, especias, final largo. Por copa y botella.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                      <div class="card h-100 border-0 soft-glow tilt">
+                        <img src="img/2.svg" class="card-img-top" alt="Etiqueta vino 2">
+                        <div class="card-body">
+                          <h5 class="card-title">Blanco de costa</h5>
+                          <p class="card-text text-secondary">Cítrico, salino, vibra con mar y verduras.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                      <div class="card h-100 border-0 soft-glow tilt">
+                        <img src="img/4.svg" class="card-img-top" alt="Etiqueta vino 3">
+                        <div class="card-body">
+                          <h5 class="card-title">Espumoso de añada</h5>
+                          <p class="card-text text-secondary">Burbuja fina, tiza y flor blanca. Ideal para brindar.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row g-4 align-items-stretch">
+                    <div class="col-md-4">
+                      <div class="card h-100 border-0 soft-glow tilt">
+                        <img src="img/3.svg" class="card-img-top" alt="Etiqueta vino 4">
+                        <div class="card-body">
+                          <h5 class="card-title">Rosado de finca</h5>
+                          <p class="card-text text-secondary">Fruta fresca, paso ligero y refrescante.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                      <div class="card h-100 border-0 soft-glow tilt">
+                        <img src="img/4.svg" class="card-img-top" alt="Etiqueta vino 5">
+                        <div class="card-body">
+                          <h5 class="card-title">Tinto de altura</h5>
+                          <p class="card-text text-secondary">Frescura, tensión y precisión en boca.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                      <div class="card h-100 border-0 soft-glow tilt">
+                        <img src="img/6.svg"  class="card-img-top" alt="Etiqueta vino 6">
+                        <div class="card-body">
+                          <h5 class="card-title">Generoso</h5>
+                          <p class="card-text text-secondary">Nuez, caramelo y salinidad vibrante.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBodega" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselBodega" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+      
+            <!-- Faja de logos/partners con scroll suave -->
+            <div class="marquee mt-5 reveal" data-animate="fade-in" aria-label="Denominaciones y socios">
+              <div class="marquee-track">
+                <span>Rioja</span>
+                <span>Ribera</span>
+                <span>Rías Baixas</span>
+                <span>Penedès</span>
+                <span>Jerez</span>
+                <span>Navarra</span>
+                <span>Priorat</span>
+                <span>Valdeorras</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- CTA reserva -->
+        <section id="cta-reserva" class="section-padding text-center position-relative">
+          <div class="container">
+            <h3 class="fw-semibold reveal" data-animate="fade-up">¿Reservamos tu mesa?</h3>
+            <p class="text-secondary mt-2 reveal" data-animate="fade-up" data-animate-delay="120">
+              Elige fecha y hora. Te esperamos en El Caller de San Roca.
+            </p>
+            <div class="mt-3 reveal" data-animate="fade-up" data-animate-delay="220">
+              <a href="index.html" class="btn btn-dark btn-lg">Reservar</a>
+            </div>
+          </div>
+          <div class="grain"></div>
+        </section>
+      
+      
+      
   
   
   
@@ -95,7 +423,7 @@
       <!-- Links JS Bootstrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
       <!-- Links JS -->
-      <script src="js/scripstiends.js"></script>
+      <script src="js/scriptrestaurante.js"></script>
  </body>
 
   
